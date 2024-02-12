@@ -1,0 +1,15 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class PascalTriangleTest {
+    @Test
+    public void getPascalNumberAtColumnAndRowTest() {
+        assertEquals(PascalTriangle.getPascalNumberAtColumnAndRow(-10, 2), -1);
+        assertEquals(PascalTriangle.getPascalNumberAtColumnAndRow(10, 2), -1);
+        assertEquals(PascalTriangle.getPascalNumberAtColumnAndRow(0, 2), 1);
+        assertEquals(PascalTriangle.getPascalNumberAtColumnAndRow(1, 2), 2);
+        assertEquals(PascalTriangle.getPascalNumberAtColumnAndRow(1, 3), 3);
+        assertEquals(PascalTriangle.getPascalNumberAtColumnAndRow(2, 4), 6);
+    }
+}
